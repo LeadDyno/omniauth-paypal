@@ -6,11 +6,11 @@ module OmniAuth
       DEFAULT_SCOPE = "openid profile"
       DEFAULT_RESPONSE_TYPE = "code"
       SANDBOX_SITE = "https://api.sandbox.paypal.com"
-      SANDBOX_AUTHORIZE_URL = 'https://www.sandbox.paypal.com/webapps/auth/protocol/openidconnect/v1/authorize'
+      SANDBOX_AUTHORIZE_URL = 'https://www.sandbox.paypal.com/signin/authorize'
 
       option :client_options, {
         :site          => 'https://api.paypal.com',
-        :authorize_url => 'https://www.paypal.com/webapps/auth/protocol/openidconnect/v1/authorize',
+        :authorize_url => 'https://www.paypal.com/signin/authorize',
         :token_url     => '/v1/identity/openidconnect/tokenservice',
         :setup         => true
       }
